@@ -8,6 +8,7 @@ import ScooterRent from "./pages/ScooterRent";
 import Tour from "./pages/Tour";
 import { Box, CssBaseline } from '@mui/material'
 import { BrowserRouter , Route, Routes } from "react-router-dom";
+import { grey } from "@mui/material/colors";
 
 export default function App() {
   return (
@@ -15,7 +16,7 @@ export default function App() {
       <CssBaseline />
       <BrowserRouter>
         <Header />
-        <Box sx={{ flex: '1 0 auto' }}>
+        <Box sx={{ flex: '1 0 auto', bgcolor: grey[200] }}>
           <Routes>
             <Route exact path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
