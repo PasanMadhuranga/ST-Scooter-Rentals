@@ -6,9 +6,9 @@ export default function ScooterRent() {
   return (
     <Grid container spacing={2} mt={2} mb={4}>
       {scootersData.map((scooter) => (
-        <Grid item xs={12} sm={6} md={4}>
+        <Grid item xs={12} sm={6} md={4} key={scooter.id}>
           <ScooterCard
-            key={scooter.id}
+            
             name={scooter.name}
             description={scooter.description}
             price={scooter.price}
