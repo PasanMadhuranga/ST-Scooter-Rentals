@@ -1,7 +1,9 @@
-import React from 'react'
+import { Box } from '@mui/material'
 
 export default function Header() {
   return (
-    <div>Header</div>
+    <Box height={64} sx={{ bgcolor: 'primary.main' }}>
+        Header
+    </Box>
   )
 }
