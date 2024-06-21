@@ -55,21 +55,23 @@ export default function Header() {
           {/* </Box> */}
 
           <Box sx={{ flexGrow: 1, display: "flex", justifyContent: "end" }}>
-            <Button sx={{ color: "white",display: "block", mr: 2 }} href="/">
+            <Button
+              sx={{ color: "white", display: "block", mr: { md: 2 } }}
+              href="/"
+            >
               home
             </Button>
             <Button
-              sx={{ color: "white", display: "block", mx:2 }}
+              sx={{ color: "white", display: "block", mx: { md: 2 } }}
               onClick={handleOpenServicesMenu}
             >
               Services
             </Button>
             <Button
               sx={{
-                
                 color: "white",
                 display: { xs: "none", md: "block" },
-                mx:2 
+                mx: 2,
               }}
               href="/about"
             >
@@ -77,10 +79,9 @@ export default function Header() {
             </Button>
             <Button
               sx={{
-                
                 color: "white",
                 display: { xs: "none", md: "block" },
-                ml:2
+                ml: 2,
               }}
               href="/contact"
             >
@@ -101,7 +102,6 @@ export default function Header() {
                 Tours
               </MenuItem>
             </Menu>
-            
           </Box>
           <Box sx={{ display: { xs: "flex", md: "none" } }}>
             <IconButton
