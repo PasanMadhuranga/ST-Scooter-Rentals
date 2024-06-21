@@ -8,7 +8,7 @@ export default [
     url: scooterImage,
     title: "Scooters",
     description:
-      "when an unknown printer took sque erat rhoncus ultri has survived not only five centuries",
+      "when an unknown printer took sque  , we provide scooter to your own location in downsouth Sri Lanka",
     link: "/scooter-rent",
   },
   {
