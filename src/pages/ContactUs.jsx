@@ -52,7 +52,7 @@ export default function ContactUs(){
                   </Typography>
                   <Typography variant="body1">
                     <a href="https://wa.me/94769876543" style={{ textDecoration: 'none', color: 'inherit' }}>
-                      <span style={{ color: '#1ebea5' }}>Phone: 076 987 6543</span>
+                      <span style={{ color: '#1ebea5' }}>+94 76 987 6543</span>
                     </a>
                   </Typography>
                 </CardContent>
@@ -82,7 +82,7 @@ export default function ContactUs(){
                   </Typography>
                   <Typography variant="body1">
                     <a href="tel:+94769876543" style={{ textDecoration: 'none', color: 'inherit' }}>
-                      <span style={{ color: '#1ebea5' }}>Phone: 076 987 6543</span>
+                      <span style={{ color: '#1ebea5' }}>Phone: +94 76 987 6543</span>
                     </a>
                   </Typography>
                 </CardContent>
