@@ -5,7 +5,7 @@ import { styled } from "@mui/system";
 const Root = styled(Card)(({ theme, backgroundImageUrl }) => ({
   display: "flex",
   flexDirection: "row",
-  height: 200,
+  minHeight: 200,
   width: "80%",
   backgroundImage: `url(${backgroundImageUrl})`, // Replace with your image URL
   backgroundSize: "cover",
@@ -41,7 +41,7 @@ const SubTitle = styled(Typography)(({ theme }) => ({
 }));
 
 const Paragraph = styled(Typography)(({ theme }) => ({
-  fontSize: "1rem",
+  fontSize: "0.85rem",
   textShadow: "2px 2px 4px rgba(0,0,0,0.6)",
   marginTop: theme.spacing(1),
 }));
