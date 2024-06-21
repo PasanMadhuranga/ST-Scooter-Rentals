@@ -96,7 +96,7 @@ export default function HomeImageButton({ category }) {
             p: 4,
             pt: 2,
             pb: (theme) => `calc(${theme.spacing(1)} + 6px)`,
-            fontSize: 20,
+            fontSize: {xs: 16, sm: 20},
           }}
         >
           {category.title}
@@ -111,7 +111,7 @@ export default function HomeImageButton({ category }) {
             display: "block",
             mt: 4,
             px: 6,
-            fontSize: 16,
+            fontSize: {xs: 12, sm: 16},
           }}
         >
           {category.description}
