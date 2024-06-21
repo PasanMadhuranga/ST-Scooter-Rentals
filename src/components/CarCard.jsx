@@ -1,6 +1,9 @@
 import { Card, CardContent, Typography, Box } from '@mui/material';
 import ImageSlider from '../components/ImageSlider'; // Import the ImageSlider component
-const CarCard = ({ name, description, price, imageUrls }) => {
+
+
+
+const CarCard = ({ name, description,passengers, price, imageUrls }) => {
   // Format the price using toLocaleString
   const formattedPrice = price.toLocaleString();
 
@@ -14,10 +17,13 @@ const CarCard = ({ name, description, price, imageUrls }) => {
           {name}
         </Typography>
         <Typography variant="body2" color="textSecondary" sx={{ marginTop: 2 }}>
+          max: {passengers}pax
+        </Typography>
+        <Typography variant="body2" color="textSecondary" sx={{ marginTop: 2 }}>
           {description}
         </Typography>
         <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginTop: 3 }}>
-          <Typography variant="body1" color="primary">
+          <Typography variant="h6" color="primary" sx={{fontWeight: 'bold'}}>
             ${formattedPrice} per day
           </Typography>
         </Box>

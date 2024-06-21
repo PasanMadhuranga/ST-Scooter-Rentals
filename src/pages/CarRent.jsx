@@ -2,6 +2,7 @@ import { Grid } from "@mui/material";
 import { Box } from "@mui/system";
 import CarCard from "../components/CarCard";
 import carsData from "../data/cars.data";
+import WhatsApp from '../components/WhatsApp';
 
 export default function CarRent() {
   return (
@@ -35,6 +36,7 @@ export default function CarRent() {
           <Grid item xs={12} sm={6} md={4} key={car.id}>
             <CarCard
               name={car.name}
+              passengers={car.passengers}
               description={car.description}
               price={car.price}
               imageUrls={car.imageUrls}
@@ -42,6 +44,7 @@ export default function CarRent() {
           </Grid>
         ))}
       </Grid>
+      <WhatsApp />
     </Box>
   );
 }
