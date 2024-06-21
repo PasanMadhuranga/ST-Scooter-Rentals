@@ -82,6 +82,7 @@ export default function HomeImageButton({ image }) {
             p: 4,
             pt: 2,
             pb: (theme) => `calc(${theme.spacing(1)} + 6px)`,
+            fontSize: 20
           }}
         >
           {image.title}
