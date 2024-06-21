@@ -55,14 +55,36 @@ export default function Header() {
           {/* </Box> */}
 
           <Box sx={{ flexGrow: 1, display: "flex", justifyContent: "end" }}>
-            <Button sx={{ color: "white", display: "block" }} href="/">
+            <Button sx={{ color: "white",display: "block", mr: 2 }} href="/">
               home
             </Button>
             <Button
-              sx={{ color: "white", display: "block" }}
+              sx={{ color: "white", display: "block", mx:2 }}
               onClick={handleOpenServicesMenu}
             >
               Services
+            </Button>
+            <Button
+              sx={{
+                
+                color: "white",
+                display: { xs: "none", md: "block" },
+                mx:2 
+              }}
+              href="/about"
+            >
+              About Us
+            </Button>
+            <Button
+              sx={{
+                
+                color: "white",
+                display: { xs: "none", md: "block" },
+                ml:2
+              }}
+              href="/contact"
+            >
+              Contact
             </Button>
             <Menu
               anchorEl={anchorElServices}
@@ -79,26 +101,7 @@ export default function Header() {
                 Tours
               </MenuItem>
             </Menu>
-            <Button
-              sx={{
-                
-                color: "white",
-                display: { xs: "none", md: "block" },
-              }}
-              href="/about"
-            >
-              About Us
-            </Button>
-            <Button
-              sx={{
-                
-                color: "white",
-                display: { xs: "none", md: "block" },
-              }}
-              href="/contact"
-            >
-              Contact
-            </Button>
+            
           </Box>
           <Box sx={{ display: { xs: "flex", md: "none" } }}>
             <IconButton
