@@ -36,7 +36,7 @@ export default function ContactUs(){
         backgroundColor: 'rgba(0, 0, 0, 0.6)',
         backgroundBlendMode: 'darken',
       }}>
-        <Typography variant="h2" component="h1" letterSpacing={2} m={3}>
+        <Typography variant="h3" component="h1" letterSpacing={2} m={3}>
           GET IN TOUCH WITH US
         </Typography>
       
