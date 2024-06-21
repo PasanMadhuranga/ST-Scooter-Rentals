@@ -14,6 +14,8 @@ const Root = styled(Card)(({ theme, backgroundImageUrl }) => ({
   boxShadow: "0 4px 8px 0 rgba(0,0,0,0.2)",
   "&:hover": {
     boxShadow: "0 8px 16px 0 rgba(0,0,0,0.2)",
+    transform: "scale(1.02)",
+    transition: "transform 0.5s",
   },
 }));
 
@@ -25,6 +27,10 @@ const Content = styled(CardContent)(({ theme }) => ({
   alignItems: "flex-start",
   backgroundColor: "rgba(0, 0, 0, 0.5)",
   padding: theme.spacing(2),
+  "&:hover": {
+    backgroundColor: "rgba(0, 0, 0, 0.3)",
+    transition: "background-color 0.5s",
+  },
 }));
 
 const Title = styled(Typography)(({ theme }) => ({

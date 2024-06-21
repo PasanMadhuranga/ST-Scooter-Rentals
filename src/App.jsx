@@ -8,7 +8,6 @@ import ScooterRent from "./pages/ScooterRent";
 import Tour from "./pages/Tour";
 import { Box, CssBaseline } from '@mui/material'
 import { BrowserRouter , Route, Routes } from "react-router-dom";
-import { grey } from "@mui/material/colors";
 import WhatsApp from './components/WhatsApp';
 export default function App() {
   return (
@@ -16,7 +15,7 @@ export default function App() {
       <CssBaseline />
       <BrowserRouter>
         <Header />
-        <Box sx={{ flex: '1 0 auto', bgcolor: grey[200] }}>
+        <Box sx={{ flex: '1 0 auto' }}>
           <Routes>
             <Route exact path="/" element={<Home />} />
             <Route path="/about" element={<About />} />

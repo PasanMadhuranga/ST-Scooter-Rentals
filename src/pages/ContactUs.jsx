@@ -16,13 +16,13 @@ const StyledCard = styled(Card)(({ theme }) => ({
     boxShadow: theme.shadows[6],
   },
   width: "300px",
+  backgroundColor: "rgba(255, 255, 255, 0.7)",
 }));
 
 export default function ContactUs(){
   return (
-    <Box sx={{ width: '100%', textAlign: 'center' }}>
-      <Box mb={3} sx={{
-        height: "50vh",
+      <Box sx={{
+        minHeight: "calc(100vh - 128px)",
         width: "100%",
         display: "flex",
         flexDirection: "column",
@@ -32,15 +32,15 @@ export default function ContactUs(){
         textAlign: "center",
         backgroundImage: `url(${contactUsImage})`,
         backgroundSize: 'cover',
-        backgroundPosition: {xs:'center', lg:'50% calc(50% + 100px)'},
+        backgroundPosition: 'center',
         backgroundColor: 'rgba(0, 0, 0, 0.6)',
         backgroundBlendMode: 'darken',
       }}>
-        <Typography variant="h2" component="h1" letterSpacing={2}>
+        <Typography variant="h2" component="h1" letterSpacing={2} m={3}>
           GET IN TOUCH WITH US
         </Typography>
-      </Box>
-      <Container maxWidth="lg" sx={{mb: 3}}>
+      
+      <Container maxWidth="lg" sx={{my: {xs: 3, sm: 6}}}>
         {/* <Box mb={1} sx={{ display: 'flex', justifyContent: 'center'}}> */}
           <Grid container spacing={3} justifyContent="center" >
             <Grid item xs={12} sm={4} sx={{display: "flex", justifyContent:"center"}}>
@@ -52,7 +52,7 @@ export default function ContactUs(){
                   </Typography>
                   <Typography variant="body1">
                     <a href="https://wa.me/94769876543" style={{ textDecoration: 'none', color: 'inherit' }}>
-                      <span style={{ color: '#1ebea5' }}>+94 76 987 6543</span>
+                      <span style={{ color: '#303f9f', fontSize: 22  }}>+94 76 987 6543</span>
                     </a>
                   </Typography>
                 </CardContent>
@@ -67,7 +67,7 @@ export default function ContactUs(){
                   </Typography>
                   <Typography variant="body1">
                     <a href="mailto:moramaths123@gmail.com" style={{ textDecoration: 'none', color: 'inherit' }}>
-                      moramaths123@gmail.com
+                    agstmadushanka1997@gmail.com
                     </a>
                   </Typography>
                 </CardContent>
@@ -82,7 +82,7 @@ export default function ContactUs(){
                   </Typography>
                   <Typography variant="body1">
                     <a href="tel:+94769876543" style={{ textDecoration: 'none', color: 'inherit' }}>
-                      <span style={{ color: '#1ebea5' }}>Phone: +94 76 987 6543</span>
+                      <span style={{ color: '#303f9f', fontSize: 22 }}>+94 76 987 6543</span>
                     </a>
                   </Typography>
                 </CardContent>
@@ -91,7 +91,7 @@ export default function ContactUs(){
           </Grid>
         {/* </Box> */}
       </Container>
-    </Box>
+      </Box>
   );
 };
 

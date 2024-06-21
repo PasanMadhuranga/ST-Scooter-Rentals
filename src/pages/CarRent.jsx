@@ -2,6 +2,7 @@ import { Grid } from "@mui/material";
 import { Box } from "@mui/system";
 import CarCard from "../components/CarCard";
 import carsData from "../data/cars.data";
+import carRentImage from "../assets/page_images/carRent_image.jpg";
 
 
 export default function CarRent() {
@@ -10,7 +11,7 @@ export default function CarRent() {
       sx={{
         // flex: "1 0 auto",
         backgroundImage:
-          "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1611073969872-9bbda462b79c?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')",
+          `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${carRentImage})`,
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
         backgroundPosition: "center",
@@ -27,7 +28,7 @@ export default function CarRent() {
         left: 0,
         right: 0,
         bottom: 0,
-        backdropFilter: "blur(2px)", // Adjust the blur value as needed
+        backdropFilter: "blur(3px)", // Adjust the blur value as needed
       },
       }}
     >
