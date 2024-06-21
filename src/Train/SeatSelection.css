@@ -1,0 +1,12 @@
+/* SeatSelection.css */
+.seat-selection {
+    display: flex;
+    flex-wrap: wrap;
+    width: 220px;
+    margin: 20px;
+  }
+  
+  .selected-seats {
+    margin-top: 20px;
+  }
+  
