@@ -29,10 +29,10 @@ export default function ContactUs(){
         alignItems: "center",
         color: "white",
         textAlign: "center",
-        backgroundImage: 'url(https://media.tacdn.com/media/attractions-splice-spp-674x446/07/b2/df/1e.jpg)',
+        backgroundImage: 'url(https://files.oaiusercontent.com/file-9Oaa3McnFILfJsuWCNcjpF4t?se=2024-06-21T16%3A09%3A12Z&sp=r&sv=2023-11-03&sr=b&rscc=max-age%3D31536000%2C%20immutable&rscd=attachment%3B%20filename%3D405d3605-9745-4322-9d26-9dca770e37b9.webp&sig=PEqtPNzrSb5exUWAUwEoT7X58KnravBjd36/6Rea4lo%3D)',
         backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        backgroundColor: 'rgba(0, 0, 0, 0.5)',
+        backgroundPosition: {xs:'center', lg:'50% calc(50% + 100px)'},
+        backgroundColor: 'rgba(0, 0, 0, 0.6)',
         backgroundBlendMode: 'darken',
       }}>
         <Typography variant="h2" component="h1" letterSpacing={2}>
