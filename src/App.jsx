@@ -9,7 +9,7 @@ import Tour from "./pages/Tour";
 import { Box, CssBaseline } from '@mui/material'
 import { BrowserRouter , Route, Routes } from "react-router-dom";
 import { grey } from "@mui/material/colors";
-
+import WhatsApp from './components/WhatsApp';
 export default function App() {
   return (
     <Box sx={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
@@ -26,6 +26,7 @@ export default function App() {
             <Route path="/tour" element={<Tour />} />
           </Routes>
         </Box>
+        <WhatsApp />
         <Footer />
       </BrowserRouter>
     </Box>

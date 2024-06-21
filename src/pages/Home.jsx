@@ -2,7 +2,6 @@ import { Box } from "@mui/material";
 import HomeImageButton from "../components/HomeImageButton";
 import categories from "../data/category.data";
 
-
 export default function Home() {
   return (
     <Box

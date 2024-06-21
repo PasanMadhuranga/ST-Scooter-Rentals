@@ -2,7 +2,7 @@ import { Grid } from "@mui/material";
 import { Box } from "@mui/system";
 import CarCard from "../components/CarCard";
 import carsData from "../data/cars.data";
-import WhatsApp from '../components/WhatsApp';
+
 
 export default function CarRent() {
   return (
@@ -44,7 +44,6 @@ export default function CarRent() {
           </Grid>
         ))}
       </Grid>
-      <WhatsApp />
     </Box>
   );
 }

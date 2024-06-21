@@ -15,7 +15,7 @@ const ImageButton = styled(ButtonBase)(({ theme }) => ({
     zIndex: 1,
     // transform: "scale(1.05)",
     "& .MuiImageBackdrop-root": {
-      opacity: 0.15,
+      opacity: 0.3,
       transition: theme.transitions.create("opacity", {
         duration: theme.transitions.duration.shortest,
       }),
@@ -53,6 +53,7 @@ const Image = styled("span")(({ theme }) => ({
   alignItems: "center",
   justifyContent: "center",
   color: theme.palette.common.white,
+  
 }));
 
 const ImageBackdrop = styled("span")(({ theme }) => ({
@@ -62,7 +63,7 @@ const ImageBackdrop = styled("span")(({ theme }) => ({
   top: 0,
   bottom: 0,
   backgroundColor: theme.palette.common.black,
-  opacity: 0.4,
+  opacity: 0.5,
   transition: theme.transitions.create("opacity"),
 }));
 
@@ -96,7 +97,7 @@ export default function HomeImageButton({ category }) {
             p: 4,
             pt: 2,
             pb: (theme) => `calc(${theme.spacing(1)} + 6px)`,
-            fontSize: {xs: 16, sm: 20},
+            fontSize: {xs: 24, sm: 28},
           }}
         >
           {category.title}

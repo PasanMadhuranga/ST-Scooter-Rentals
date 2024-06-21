@@ -3,6 +3,7 @@ import { Grid } from "@mui/material";
 import { Box } from "@mui/system";
 import scootersData from "../data/scooters.data";
 
+
 export default function ScooterRent() {
   return (
     <Box sx={{ flex: "1 0 auto", 
