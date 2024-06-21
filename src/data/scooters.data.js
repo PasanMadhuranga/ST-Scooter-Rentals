@@ -1,6 +1,6 @@
 export default [
   {
-    id: 1,
+    id: "s1",
     name: "Scooter 1",
     description: "Scooter 1 description",
     price: 10,
@@ -11,7 +11,7 @@ export default [
     ],
   },
   {
-    id: 2,
+    id: "s2",
     name: "Scooter 2",
     description: "Scooter 2 description",
     price: 20,
@@ -22,7 +22,7 @@ export default [
     ],
   },
   {
-    id: 3,
+    id: "s3",
     name: "Scooter 3",
     description: "Scooter 3 description",
     price: 30,
