@@ -4,6 +4,7 @@ import { styled } from '@mui/material/styles';
 import PhoneIcon from '@mui/icons-material/Phone';
 import EmailIcon from '@mui/icons-material/Email';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
+import contactUsImage from '../assets/page_images/contactUs_image.webp';
 
 // Styled Card component to include hover effect
 const StyledCard = styled(Card)(({ theme }) => ({
@@ -29,7 +30,7 @@ export default function ContactUs(){
         alignItems: "center",
         color: "white",
         textAlign: "center",
-        backgroundImage: 'url(https://files.oaiusercontent.com/file-9Oaa3McnFILfJsuWCNcjpF4t?se=2024-06-21T16%3A09%3A12Z&sp=r&sv=2023-11-03&sr=b&rscc=max-age%3D31536000%2C%20immutable&rscd=attachment%3B%20filename%3D405d3605-9745-4322-9d26-9dca770e37b9.webp&sig=PEqtPNzrSb5exUWAUwEoT7X58KnravBjd36/6Rea4lo%3D)',
+        backgroundImage: `url(${contactUsImage})`,
         backgroundSize: 'cover',
         backgroundPosition: {xs:'center', lg:'50% calc(50% + 100px)'},
         backgroundColor: 'rgba(0, 0, 0, 0.6)',
