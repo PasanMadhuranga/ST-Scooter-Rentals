@@ -1,6 +1,7 @@
 import { styled } from "@mui/material/styles";
 import ButtonBase from "@mui/material/ButtonBase";
 import Typography from "@mui/material/Typography";
+import { useNavigate } from "react-router-dom";
 
 const ImageButton = styled(ButtonBase)(({ theme }) => ({
   position: "relative",
@@ -12,14 +13,21 @@ const ImageButton = styled(ButtonBase)(({ theme }) => ({
   },
   "&:hover, &.Mui-focusVisible": {
     zIndex: 1,
+    // transform: "scale(1.05)",
     "& .MuiImageBackdrop-root": {
       opacity: 0.15,
+      transition: theme.transitions.create("opacity", {
+        duration: theme.transitions.duration.shortest,
+      }),
     },
     "& .MuiImageMarked-root": {
       opacity: 0,
     },
-    "& .MuiTypography-root": {
+    "& .MuiTypography-root.MuiTypography-subtitle1": {
       border: "4px solid currentColor",
+      transition: theme.transitions.create("border", {
+        duration: theme.transitions.duration.shortest,
+      }),
     },
   },
 }));
@@ -41,6 +49,7 @@ const Image = styled("span")(({ theme }) => ({
   top: 0,
   bottom: 0,
   display: "flex",
+  flexDirection: "column",
   alignItems: "center",
   justifyContent: "center",
   color: theme.palette.common.white,
@@ -67,10 +76,15 @@ const ImageMarked = styled("span")(({ theme }) => ({
   transition: theme.transitions.create("opacity"),
 }));
 
-export default function HomeImageButton({ image }) {
+export default function HomeImageButton({ category }) {
+  const navigate = useNavigate();
+  const handleClick = () => {
+    navigate(category.link);
+  };
+
   return (
-    <ImageButton focusRipple>
-      <ImageSrc style={{ backgroundImage: `url(${image.url})` }} />
+    <ImageButton focusRipple onClick={handleClick}>
+      <ImageSrc style={{ backgroundImage: `url(${category.url})` }} />
       <ImageBackdrop className="MuiImageBackdrop-root" />
       <Image>
         <Typography
@@ -82,11 +96,25 @@ export default function HomeImageButton({ image }) {
             p: 4,
             pt: 2,
             pb: (theme) => `calc(${theme.spacing(1)} + 6px)`,
-            fontSize: 20
+            fontSize: 20,
           }}
         >
-          {image.title}
+          {category.title}
+
           <ImageMarked className="MuiImageMarked-root" />
+        </Typography>
+        <Typography
+          component="span"
+          variant="body2"
+          color="inherit"
+          sx={{
+            display: "block",
+            mt: 4,
+            px: 6,
+            fontSize: 16,
+          }}
+        >
+          {category.description}
         </Typography>
       </Image>
     </ImageButton>
