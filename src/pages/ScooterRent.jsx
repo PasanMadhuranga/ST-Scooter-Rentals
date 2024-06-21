@@ -10,7 +10,7 @@ export default function ScooterRent() {
       backgroundSize: "cover",
       backgroundRepeat: "no-repeat",
       backgroundPosition: "center",
-      height: "calc(100vh - 128px)",
+      height: {sm: "calc(100vh - 128px)"},
       display: "flex",
       flexDirection: "column",
       justifyContent: "center",

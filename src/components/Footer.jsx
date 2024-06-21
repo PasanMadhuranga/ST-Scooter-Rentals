@@ -3,7 +3,7 @@ import Container from "@mui/material/Container";
 import { Grid, Box } from "@mui/material";
 import Typography from "@mui/material/Typography";
 import IconButton from "@mui/material/IconButton";
-import GitHubIcon from "@mui/icons-material/GitHub";
+import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import { grey } from "@mui/material/colors";
@@ -70,8 +70,8 @@ const Footer = () => {
             }}
           >
             <Box>
-              <IconButton color="inherit" href="#">
-                <GitHubIcon />
+              <IconButton color="inherit" href="https://wa.me/94769876543">
+                <WhatsAppIcon />
               </IconButton>
               <IconButton color="inherit" href="#">
                 <FacebookIcon />
