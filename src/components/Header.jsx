@@ -47,7 +47,7 @@ export default function Header() {
   };
 
   return (
-    <AppBar position="static" sx={{ backgroundColor: grey[900] }}>
+    <AppBar position="static" sx={{ backgroundColor: grey[900], height: 64 }}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           {/* <Box sx={{ display: { xs: "none", md: "block" } }}> */}
@@ -55,11 +55,11 @@ export default function Header() {
           {/* </Box> */}
 
           <Box sx={{ flexGrow: 1, display: "flex", justifyContent: "end" }}>
-            <Button sx={{ my: 2, color: "white", display: "block" }} href="/">
+            <Button sx={{ color: "white", display: "block" }} href="/">
               home
             </Button>
             <Button
-              sx={{ my: 2, color: "white", display: "block" }}
+              sx={{ color: "white", display: "block" }}
               onClick={handleOpenServicesMenu}
             >
               Services
@@ -81,7 +81,7 @@ export default function Header() {
             </Menu>
             <Button
               sx={{
-                my: 2,
+                
                 color: "white",
                 display: { xs: "none", md: "block" },
               }}
@@ -91,7 +91,7 @@ export default function Header() {
             </Button>
             <Button
               sx={{
-                my: 2,
+                
                 color: "white",
                 display: { xs: "none", md: "block" },
               }}
